@@ -12,6 +12,7 @@ angular.module('insight.system').controller('HeaderController',
       symbol: netSymbol
     };
 
+<<<<<<< HEAD
     $scope.menu = [{
       'title': 'Blocks',
       'link': 'blocks'
@@ -22,6 +23,27 @@ angular.module('insight.system').controller('HeaderController',
       'title': 'Status',
       'link': 'status'
     }];
+=======
+    $scope.menu = [
+      {
+        'title': 'Blocks',
+        'link': 'blocks'
+      },
+      {
+        'title': 'More',
+        'items': [
+          {
+            'title': 'Rich list',
+            'link': 'richlist'
+          },
+          {
+            'title': 'Status',
+            'link': 'status'
+          }
+        ]
+      }
+    ];
+>>>>>>> 5880657... UI for rich list (#3)
 
     $scope.openScannerModal = function() {
       var modalInstance = $modal.open({
